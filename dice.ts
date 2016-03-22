@@ -27,3 +27,13 @@ function rollAllDice() {
         document.getElementById(i).innerText = String(allDice[i].value);
     }
 }
+
+function sumAllDice() {
+    let sum:number = 0;
+    
+    for (let i in allDice) {
+        sum += allDice[i].value;
+    }
+    
+    alert(`Sum of all Dice: ${sum}.`);
+}

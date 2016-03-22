@@ -23,3 +23,10 @@ function rollAllDice() {
         document.getElementById(i).innerText = String(allDice[i].value);
     }
 }
+function sumAllDice() {
+    var sum = 0;
+    for (var i in allDice) {
+        sum += allDice[i].value;
+    }
+    alert("Sum of all Dice: " + sum + ".");
+}
